@@ -1,0 +1,151 @@
+@import "../../style/mixins.scss";
+.header {
+  width: 100vw;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0px 10px;
+  .logo2 {
+    width: 23px;
+    cursor: pointer;
+    display: block;
+    padding: 15px 0;
+    margin: 0px 7px;
+  }
+  .logo {
+    width: 120px;
+    cursor: pointer;
+    display: none;
+  }
+  .menuBtn {
+    display: none;
+    display: flex;
+    align-items: center;
+    .menu {
+      display: flex;
+      align-items: center;
+      .btn {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 0px 7px;
+      }
+    }
+  }
+  @include md {
+    .logo {
+      width: 120px;
+      cursor: pointer;
+      display: block;
+    }
+    .logo2 {
+      width: 50px;
+      cursor: pointer;
+      display: none;
+    }
+    .menuBtn {
+      display: none;
+    }
+  }
+  .input-filed {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .input {
+      width: 100px;
+      height: 27px;
+      background: transparent;
+      border: 1px solid #555;
+      outline: none;
+      padding: 2px 10px;
+      font-size: 15px;
+      color: #ebebeb;
+      &:focus {
+        border: 1px solid #4386a5;
+        // border-left: none;
+      }
+    }
+    .search-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 8px;
+      font-size: 18px;
+      height: 27px;
+    }
+    .first {
+      border-radius: 20px 0 0 20px;
+      border: 1px solid #555;
+      display: none;
+    }
+
+    .second {
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+      border: 1px solid #555;
+    }
+    @include sm {
+      .input {
+        width: 240px;
+        height: 30px;
+      }
+      .search-icon {
+        height: 30px;
+        padding: 3px 12px;
+      }
+    }
+    @include md {
+      .input {
+        width: 380px;
+        height: 35px;
+        font-size: 17px;
+      }
+      .search-icon {
+        height: 35px;
+        padding: 3px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .first {
+        display: flex;
+      }
+    }
+  }
+  .loginInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 5px;
+    .icon {
+      margin: auto 10px;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 100%;
+      display: none;
+      &:hover {
+        background: #8a8a8a;
+      }
+    }
+    .img {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    @include sm {
+      .icon {
+        display: block;
+      }
+    }
+  }
+}
