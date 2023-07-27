@@ -1,5 +1,12 @@
+import LeftNav from "../LeftNev/LeftNav";
+import "./Feed.scss";
+
 function Feed() {
-  return <div></div>;
+  return (
+    <div className="feed">
+      <LeftNav />
+    </div>
+  );
 }
 
 export default Feed;

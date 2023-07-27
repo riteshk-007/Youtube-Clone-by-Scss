@@ -1,0 +1,35 @@
+@import "../../style/mixins.scss";
+
+.menus {
+  width: 240px;
+  background: #000;
+  height: 98vh;
+  top: 2%;
+  text-align: center;
+  flex-direction: column;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  transform: translateX(-240px);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+  .hr {
+    margin: 10px 0;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.active {
+  transform: translateX(0px);
+}
+@include md {
+  .menus {
+    transform: translateX(0px);
+  }
+  .menu-item {
+    background: #555;
+    color: #fff;
+  }
+}

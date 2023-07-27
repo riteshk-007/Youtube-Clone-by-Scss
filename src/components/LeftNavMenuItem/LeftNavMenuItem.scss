@@ -1,0 +1,31 @@
+@import "../../style/mixins.scss";
+
+.leftItem {
+  color: #fff;
+  width: 100%;
+  margin-top: 22px;
+  font-family: sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  justify-content: start;
+  font-size: 12px;
+  .menu-icon {
+    font-size: 20px;
+    margin: auto 5px;
+  }
+  @include md {
+    .leftItem {
+      font-size: 13px;
+    }
+  }
+}
+.name {
+  color: #a1a1a1;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: start;
+}
