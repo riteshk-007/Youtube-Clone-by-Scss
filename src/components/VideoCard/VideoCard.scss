@@ -1,0 +1,87 @@
+@import "../../style/mixins.scss";
+
+.card {
+  width: 340px;
+  height: auto;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  .img {
+    width: 100%;
+    position: relative;
+  }
+  .img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+  text-decoration: none;
+  & img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin: 0px 6px;
+    text-decoration: none;
+  }
+  & p {
+    color: #fff;
+    display: block;
+    text-overflow: ellipsis;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+}
+.verified {
+  color: #a3a3a3;
+  font-size: 12px;
+  text-decoration: none;
+  width: 80%;
+  text-align: start;
+  display: flex;
+  margin-bottom: 2px;
+
+  .CheckCircle {
+    margin: 0px 4px;
+  }
+}
+.views {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #a3a3a3;
+  font-size: 13px;
+  width: 87%;
+  display: flex;
+  .view-time {
+    margin: 3px 7px;
+    text-decoration: none;
+  }
+  .dot {
+    width: 4px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: #a3a3a3;
+  }
+}
+@include md {
+  .card {
+    width: 380px;
+  }
+}

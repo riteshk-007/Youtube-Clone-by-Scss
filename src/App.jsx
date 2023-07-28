@@ -9,7 +9,7 @@ import Video from "./components/VideoDetails/Video";
 function App() {
   return (
     <div className="app">
-      <Header className="navbar" />
+      <Header />
       <Routes>
         <Route path="/" element={<Feed />} />
         <Route path="/searchResult/:searchQuery" element={<SearchResults />} />
