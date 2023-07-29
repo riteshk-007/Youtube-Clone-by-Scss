@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import ReactPlayer from "react-player/youtube";
 
-import SuggestionVideoCard from "../SeachResultVideoCard/SeachResultVideoCard";
+import SuggestionVideoCard from "../SuggestionVideoCard/SuggestionVideoCard";
 import "./Video.scss";
 import { Context } from "../../Context/ContextApi";
 import { FetchApiData } from "../../utils/api";

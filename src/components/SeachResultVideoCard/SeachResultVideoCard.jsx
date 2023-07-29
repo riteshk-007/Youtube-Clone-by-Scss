@@ -1,5 +1,7 @@
+import "./SeachResultVideoCard.scss";
+
 function SeachResultVideoCard() {
-  return <div></div>;
+  return <></>;
 }
 
 export default SeachResultVideoCard;
