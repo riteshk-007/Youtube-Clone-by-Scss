@@ -1,0 +1,28 @@
+@import "../../style/mixins.scss";
+
+.search-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  .serach-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+  }
+  @include md {
+    .serach-container {
+      width: 60%;
+    }
+  }
+}
+
+@include md {
+  .search-page {
+    width: 80%;
+  }
+}
