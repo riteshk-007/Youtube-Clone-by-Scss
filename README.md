@@ -3,8 +3,6 @@
 
 YouTube Clone by SCSS is a front-end web application that replicates the appearance and user interface of YouTube using SCSS (Sassy CSS). This project aims to showcase the power and flexibility of SCSS in creating modern and visually appealing web designs.
 
-![YouTube Clone by SCSS](https://example.com/path/to/screenshot.png)
-
 ## Features
 
 - Visual Appeal: The application is designed to closely resemble the visual elements of YouTube, including the header, search bar, video thumbnails, and video player.
